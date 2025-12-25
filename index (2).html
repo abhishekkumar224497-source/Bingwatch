@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Kumar | Netflix-Style Portfolio</title>
+  <style>
+    /* ===== RESET ===== */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      background:#141414;
+      color:#fff;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x:hidden;
+    }/* ===== NAVBAR (EXACT NETFLIX FEEL) ===== */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  background: linear-gradient(to bottom, rgba(0,0,0,.85), rgba(0,0,0,0));
+  z-index: 1000;
+}
+.logo {
+  color: #e50914;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.nav-links span {
+  margin-left: 22px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #e5e5e5;
+}
+
+/* ===== HERO (NETFLIX BANNER STYLE) ===== */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(to top, #141414 10%, rgba(0,0,0,.25)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+  background-size: cover;
+  background-position: center;
+  padding: 220px 60px;
+}
+.hero h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+.hero p {
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e5e5e5;
+}
+.hero-buttons {
+  margin-top: 26px;
+}
+.btn {
+  padding: 12px 26px;
+  margin-right: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.play { background: #fff; color: #000; }
+.info { background: rgba(109,109,110,.7); color: #fff; }
+
+/* ===== SECTIONS ===== */
+.section {
+  padding-left: 60px;
+  margin-top: -80px;
+}
+.section h2 {
+  font-size: 20px;
+  margin: 30px 0 14px;
+}
+
+/* ===== ROW (HORIZONTAL SCROLL) ===== */
+.row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 40px;
+}
+.row::-webkit-scrollbar { display: none; }
+
+/* ===== NETFLIX CARDS ===== */
+.card {
+  min-width: 260px;
+  height: 150px;
+  background: #222;
+  border-radius: 6px;
+  padding: 14px;
+  transition: transform .35s ease, z-index .35s;
+}
+.card:hover {
+  transform: scale(1.28);
+  z-index: 10;
+}
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.metric {
+  color: #46d369;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.card p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 60px;
+  color: #777;
+  font-size: 13px;
+}
+
+  </style>
+</head>
+<body>  <!-- NAVBAR -->  <div class="nav">
+    <div class="logo">NETFOLIO</div>
+    <div class="nav-links">
+      <span>Home</span>
+      <span>Case Studies</span>
+      <span>Dubai Hire</span>
+      <span>Contact</span>
+    </div>
+  </div>  <!-- HERO -->  <section class="hero">
+    <h1>Abhishek Kumar</h1>
+    <p>
+      Digital & Performance Marketer helping Dubai brands scale using Google Ads,
+      Meta Ads, SEO, CRO & growth funnels. 5+ years across SaaS, Real Estate,
+      Hospitality & F&B.
+    </p>
+    <div class="hero-buttons">
+      <button class="btn play"> View Work</button>
+      <button class="btn info">More Info</button>
+    </div>
+  </section>  <!-- ROWS -->  <div class="section">
+    <h2>Trending in Dubai </h2>
+    <div class="row">
+      <div class="card"><h3>Performance Marketing</h3><p class="metric">30% CPA</p><p>Google & Meta Ads</p></div>
+      <div class="card"><h3>Lead Generation</h3><p>B2B & B2C Funnels</p></div>
+      <div class="card"><h3>Real Estate Campaigns</h3><p>High-ticket Dubai leads</p></div>
+      <div class="card"><h3>Hospitality Growth</h3><p>Bookings & retention</p></div>
+    </div><h2>Netflix Originals: Case Studies</h2>
+<div class="row">
+  <div class="card"><h3>Episode 01 – RunHotel / Cropsly</h3><p class="metric">+45% B2B Leads</p><p>SaaS growth campaigns</p></div>
+  <div class="card"><h3>Episode 02 – Akasa Cafe</h3><p class="metric">+60% Engagement</p><p>Paid social & retention</p></div>
+  <div class="card"><h3>Episode 03 – Duple IT</h3><p>Brand & content scaling</p></div>
+</div>
+
+<h2>My Tech Stack</h2>
+<div class="row">
+  <div class="card"><h3>Ads & Analytics</h3><p>Google Ads, Meta, GA4</p></div>
+  <div class="card"><h3>CRM & Automation</h3><p>HubSpot, Zoho, WhatsApp API</p></div>
+  <div class="card"><h3>CMS & Design</h3><p>WordPress, Shopify, Figma</p></div>
+</div>
+
+  </div>  <footer>
+    © 2025 Abhishek Kumar • NetflixStyle Personal Portfolio • Dubai Focused
+  </footer></body>
+</html>
